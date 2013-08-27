@@ -1,0 +1,20 @@
+package trabajo;
+  import java.util.Scanner;
+public class sumatoria {
+  
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     Scanner x= new Scanner(System.in);
+     int r= x.nextInt();
+     System.out.println(r);
+    
+     int y=x.nextInt();
+    
+     int e= suma(r,y);
+     System.out.println("el valor es"+e);
+	}
+	static int suma(int r,int t){
+		return r+t;
+	}
+
+}

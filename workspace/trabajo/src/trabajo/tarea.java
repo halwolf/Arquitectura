@@ -1,0 +1,36 @@
+package trabajo;
+
+public class tarea {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int A=15,B=56,a,b,c,d;
+		a = A%B;
+		b = B%A;
+		c = A%2;
+		d = B%2;
+	
+		if (a==0 && b==B || b==0 )
+			 System.out.println(A+" y "+B+" es multiplo");
+		 else
+			 System.out.println(A+ " y "+B+" no es multiplo");
+		if (c==0 && d==0)
+			System.out.println("Son numeros pares");
+		else
+			System.out.println("Algun numero es impar");
+
+		
+		if (Math.cbrt(A)* Math.cbrt(A)*Math.cbrt(A) == A )
+			System.out.println("el numero "+A+" tiene cubo perfecto");
+		else
+			System.out.println("el numero "+A+" no tiene cubo perfecto");
+	
+		
+		if (Math.cbrt(B)* Math.cbrt(B)*Math.cbrt(B) == B )
+			System.out.println("el numero "+B+" tiene cubo perfecto");
+		else
+			System.out.println("el numero "+B+" no tiene cubo perfecto");
+	}
+	}
+
+

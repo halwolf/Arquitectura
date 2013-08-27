@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class CALCULARSUELDO{
+    
+    double pd=20000, sb=600000,Total;
+    public void Calcular(int n){
+               
+        Total=n*pd;
+        System.out.println("El salario total es: "+Total);
+        }
+    
+    public static void main(String[] args){
+          CALCULARSUELDO sueldo=new CALCULARSUELDO();
+          double HeF=5000, N=30000, Domin=28000;
+          System.out.println("Precio por dia:"+sueldo.pd+"\nsalario basico:"+sueldo.sb);
+          Scanner leer=new Scanner(System.in);
+          System.out.println("Escribe los dias trabajados");
+          int dias=leer.nextInt();
+          sueldo.Calcular(dias);
+          
+          
+          
+    }
+}

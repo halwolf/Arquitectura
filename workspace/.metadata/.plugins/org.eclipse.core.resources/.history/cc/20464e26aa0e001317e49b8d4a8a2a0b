@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class CALCULARSUELDO{
+    //La variable pd es precio por dia y sm es salario basico
+    double pd=24000, sb=600000,Total;
+    public void Calcular(int n){
+        /*Verifica si el número de dias es menor de 25, 
+        en caso de ser mayor se calcularan las horas extras*/
+        if(n<=25){
+        Total=n*pd;
+        System.out.println("El salario total es: "+Total);
+        }
+    }
+    public static void main(String[] args){
+          CALCULARSUELDO sueldo=new CALCULARSUELDO();
+          System.out.println("Precio por dia:"+sueldo.pd+"\nHora extra:"+sueldo.sb);
+          Scanner leer=new Scanner(System.in);
+          System.out.println("Escribe los dias trabajados");
+          int horas=leer.nextInt();
+          sueldo.Calcular(horas);
+    }
+}

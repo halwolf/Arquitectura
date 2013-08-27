@@ -1,0 +1,23 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+
+public class CALCULARSUELDO {
+public static void main(String[] arsg) throws NumberFormatException, IOException{
+//Beffer de Lectura
+BufferedReader leer = new BufferedReader (new InputStreamReader(System.in));
+
+int edad = 0, sueldo = 0, antiguedad = 0;
+System.out.println("Ingrese Edad del Empleado : ");
+edad = Integer.parseInt(leer.readLine());
+System.out.println("Ingrese Antigueda del Empleado : ");
+antiguedad = Integer.parseInt(leer.readLine());
+
+sueldo = edad+100;
+for(int i=1;i<=antiguedad;i++){
+sueldo += i;
+}	
+System.out.println("El sueldo quincenal del empleado es :"+(sueldo*2));
+}
+}
